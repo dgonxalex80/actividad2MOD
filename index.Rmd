@@ -1,0 +1,146 @@
+---
+title: <span style="color:#034a94"> **Actividad 2**</span>
+output:
+html_document:
+css: styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA)
+library(summarytools)
+
+
+c1 ="#FF7F00"  # naranja - color primario 
+c2 ="#034A94"  # azul oscuro - color secundario
+c3 ="#0EB0C6"  # azul claro - color terciario
+c4 ="#686868"  # gris - color texto
+```
+
+
+<br/><br/>
+
+# **Caso C&A**
+
+<br/>
+
+<br/>
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/cali.png")
+```
+
+Tomada de: [sitios-turisticos/cali](https://www.colombia.com/turismo/sitios-turisticos/cali/)
+
+
+<br/>
+
+## **Enunciado**
+
+<br/>
+
+Maria comenzó como agente de bienes raíces en Cali hace 10 años. Después de laborar dos años para una empresa nacional, se traslado a Bogotá y trabajó para otra agencia de bienes raíces. Sus amigos y familiares la convencieron de que con su experiencia y conocimientos del negocio debía abrir su propia agencia. Terminó por adquirir la licencia de intermediario y al poco tiempo fundó su propia compañía, C\&A (Casas y Apartamentos) en Cali. Santiago y Lina, dos vendedores de la empresa anterior aceptaron trabajar en la nueva compaña. En la actualidad ocho agentes de bienes raíces colaboran con ella en C\&A. 
+
+<br/>
+
+Ante los momentos que se viven por la cuarentena, las ventas de bienes raíces en Cali se han visto disminuidas de manera significativa en lo corrido del año. Durante este periodo muchas instituciones bancarias de ahorro y vivienda están prestando grandes sumas de dinero para la industria y la construcción comercial y residencial. Cuando el efecto producto de las tensiones politicas y sociales disminuya, se espera que la actividad económica de este sector se reactive.
+
+<br/>
+
+Hace dos días, Maria  recibió una carta solicitando la compra de dos viviendas por parte de una compañía internacional que desea ubicar a dos de sus empleados con sus familias en la ciudad. Las solicitudes incluyen las siguientes condiciones: 
+
+<br/><br/>
+
+| Caracteristicas |  Vivienda 1      | Vivienda 2  |
+|:---------------:|:----------------:|:-----------:|
+|Tipo             |    Casa          | Apartamento |
+|área construida  |     200          |      300    |
+|parqueaderos     |       1          |        3    |
+|baños            |       2          |        3    |
+|habitaciones     |       4          |        5    |
+|estrato          |   4 o 5           |  5 o 6     |
+|zona             |   Norte          | Sur         |
+|crédito preaprobado|  350 millones  | 850 millones|
+
+<br/>
+
+Ayude a Maria  a responder la solicitud, mediante técnicas modelación que usted conoce. Ella requiere le envíe un informe ejecutivo (no mas de dos paginas) donde analice los dos casos y sus recomendaciones. Como soporte del informe debe anexar las estimaciones, validaciones y comparación de modelos requeridos. 
+
+<br/><br/><br/>
+
+## **Datos**
+
+Los datos de los tres últimos meses se adjuntan en la base que puede obtener con el siguiente código en R
+
++ **zona** : ubicación de la vivienda    : Zona Centro, Zona Norte,...        
++ **piso** : piso que ocupa la vivienda : primer piso, segundo piso...          
++ **estrato** : estrato socioeconónico : 3,4,5,6
++ **preciom** : precio de la vivienda en millones de pesos
++ **areaconst** : área construida
++ **parqueaderos** : número de parqueaderos
++ **banios** : nḿero de baños
++ **habitaciones**  : número de habitaciones
++ **tipo** : tipo de vivienda : Casa, Apartamento
++ **barrio** : barrio de ubicación de la vivienda : 20 de Julio, alamos,...
++ **longitud** : coordenada geográfica
++ **latitud** : coordenada geográfica
+   
+<br/><br/>
+
+## **Pasos requeridos para la obtención de los resultados**
+
+1. Realice un filtro a la base de datos e incluya solo las ofertas de : **base1**: casas, de la zona norte de la ciudad 
+
+<br/>
+
+Presente los primeros 3 registros de las bases y algunas tablas que comprueben la consulta. (Adicional un mapa con los puntos de las bases. Discutir si todos los puntos se ubican en la zona correspondiente o se presentan valores en otras zonas, por que?).
+
+<br/>
+
+2. Realice un análisis exploratorio de datos enfocado en la correlación entre la variable respuesta (precio del apartamento) en función del área construida, estrato, numero de baños, numero de habitaciones y zona donde se ubica la vivienda. Use gráficos interactivos con el paquete `plotly` e interprete los resultados.
+
+<br/>
+
+3. Estime un modelo de regresión lineal múltiple con las variables del punto anterior (precio = f(área construida, estrato, numero de cuartos, numero de parqueaderos, numero de baños ) )  e interprete los coeficientes si son estadísticamente significativos. Las interpretaciones deber están contextualizadas y discutir si los resultados son lógicos. Adicionalmente interprete el coeficiente $R^2$ y discuta el ajuste del modelo e implicaciones (que podrían hacer para mejorarlo).
+
+<br/>
+
+4. Realice la validación de supuestos del modelo e interprete los resultados (no es necesario corregir en caso de presentar problemas solo realizar sugerencias de que se podría hacer).
+
+
+<br/>
+
+5. Con el modelo identificado debe predecir el precio de la vivienda con las características de la primera solicitud. 
+
+<br/>
+
+6. Con las predicciones del modelo sugiera potenciales ofertas que responda a la solicitud de la vivienda 1. Tenga encuentra que la empresa tiene crédito preaprobado de máximo 350 millones de pesos. Realice un análisis y presente en un mapa al menos 5 ofertas potenciales que debe discutir.
+
+<br/>
+
+7. Realice los pasos del 1 - 6. Para la segunda solicitud se tiene un crédito preaprobado por valor de $850 millones. 
+
+
+<br/><br/>
+
+## **Entregable**
+
+Informe ejecutivo, máximo de dos hojas, con anexos soporte de las estimaciones en formato pdf
+
+
+<!-- ### **Carga de datos** -->
+
+<!-- #### bajando los datos desde el paqueteMOD -->
+
+<!-- ```{r, eval=FALSE} -->
+<!-- library(remotes)  -->
+<!-- library(devtools)   -->
+<!-- install_github("dgonxalex80/paqueteDEG", force = TRUE) # bajar paquete -->
+<!-- library(paqueteDEG) -->
+<!-- data=paqueteDEG::casas -->
+<!-- ``` -->
+
+
+<!-- Adaptado de Weiers, Ronald M, Introducción a la estadística para Negocios., 2006. -->
+
+
+
