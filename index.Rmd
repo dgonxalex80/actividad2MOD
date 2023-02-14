@@ -19,7 +19,7 @@ c4 ="#686868"  # gris - color texto
 
 <br/><br/>
 
-# **Caso C&A**
+# <span style="color:#034a94">**Caso C&A**</span>
 
 <br/>
 
@@ -34,7 +34,7 @@ Tomada de: [sitios-turisticos/cali](https://www.colombia.com/turismo/sitios-turi
 
 <br/>
 
-## **Enunciado**
+## <span style="color:#034a94">**Enunciado**</span>
 
 <br/>
 
@@ -42,16 +42,16 @@ Maria comenzó como agente de bienes raíces en Cali hace 10 años. Después de 
 
 <br/>
 
-Ante los momentos que se viven por la cuarentena, las ventas de bienes raíces en Cali se han visto disminuidas de manera significativa en lo corrido del año. Durante este periodo muchas instituciones bancarias de ahorro y vivienda están prestando grandes sumas de dinero para la industria y la construcción comercial y residencial. Cuando el efecto producto de las tensiones politicas y sociales disminuya, se espera que la actividad económica de este sector se reactive.
+Actualmente las ventas de bienes raíces en Cali se han visto disminuidas de manera significativa en lo corrido del año. Durante este periodo muchas instituciones bancarias de ahorro y vivienda están prestando grandes sumas de dinero para la industria y la construcción comercial y residencial. Cuando el efecto producto de las tensiones políticas y sociales disminuya, se espera que la actividad económica de este sector se reactive.
 
 <br/>
 
-Hace dos días, Maria  recibió una carta solicitando la compra de dos viviendas por parte de una compañía internacional que desea ubicar a dos de sus empleados con sus familias en la ciudad. Las solicitudes incluyen las siguientes condiciones: 
+Hace dos días, Maria  recibió una carta solicitando asesoria para la compra de dos viviendas por parte de una compañía internacional que desea ubicar a dos de sus empleados con sus familias en la ciudad. Las solicitudes incluyen las siguientes condiciones: 
 
 <br/><br/>
 
 | Caracteristicas |  Vivienda 1      | Vivienda 2  |
-|:---------------:|:----------------:|:-----------:|
+|:----------------|:----------------:|:-----------:|
 |Tipo             |    Casa          | Apartamento |
 |área construida  |     200          |      300    |
 |parqueaderos     |       1          |        3    |
@@ -67,7 +67,7 @@ Ayude a Maria  a responder la solicitud, mediante técnicas modelación que uste
 
 <br/><br/><br/>
 
-## **Datos**
+## <span style="color:#034a94">**Datos**</span>
 
 Los datos de los tres últimos meses se adjuntan en la base que puede obtener con el siguiente código en R
 
@@ -86,7 +86,7 @@ Los datos de los tres últimos meses se adjuntan en la base que puede obtener co
    
 <br/><br/>
 
-## **Pasos requeridos para la obtención de los resultados**
+## <span style="color:#034a94">**Pasos requeridos para la obtención de los resultados**</span>
 
 1. Realice un filtro a la base de datos e incluya solo las ofertas de : **base1**: casas, de la zona norte de la ciudad 
 
@@ -122,7 +122,7 @@ Presente los primeros 3 registros de las bases y algunas tablas que comprueben l
 
 <br/><br/>
 
-## **Entregable**
+## <span style="color:#034a94">**Entregable**</span>
 
 Informe ejecutivo, máximo de dos hojas, con anexos soporte de las estimaciones en formato pdf
 
