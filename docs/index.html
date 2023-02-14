@@ -358,104 +358,147 @@ soporte del informe debe anexar las estimaciones, validaciones y
 comparación de modelos requeridos.</p>
 <p><br/><br/><br/></p>
 </div>
-<div id="datos" class="section level2">
+<div id="datos" class="section level2 content-box-blue">
 <h2><span style="color:#034a94"><strong>Datos</strong></span></h2>
 <p>Los datos de los tres últimos meses se adjuntan en la base que puede
 obtener con el siguiente código en R</p>
-<ul>
-<li><strong>zona</strong> : ubicación de la vivienda : Zona Centro, Zona
-Norte,…<br />
-</li>
-<li><strong>piso</strong> : piso que ocupa la vivienda : primer piso,
-segundo piso…<br />
-</li>
-<li><strong>estrato</strong> : estrato socioeconónico : 3,4,5,6</li>
-<li><strong>preciom</strong> : precio de la vivienda en millones de
-pesos</li>
-<li><strong>areaconst</strong> : área construida</li>
-<li><strong>parqueaderos</strong> : número de parqueaderos</li>
-<li><strong>banios</strong> : nḿero de baños</li>
-<li><strong>habitaciones</strong> : número de habitaciones</li>
-<li><strong>tipo</strong> : tipo de vivienda : Casa, Apartamento</li>
-<li><strong>barrio</strong> : barrio de ubicación de la vivienda : 20 de
-Julio, alamos,…</li>
-<li><strong>longitud</strong> : coordenada geográfica</li>
-<li><strong>latitud</strong> : coordenada geográfica</li>
-</ul>
-<p><br/><br/></p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">variable</th>
+<th align="left">descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>zona</strong></td>
+<td align="left">ubicación de la vivienda : Zona Centro, Zona
+Norte,…</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>piso</strong></td>
+<td align="left">piso que ocupa la vivienda : primer piso, segundo
+piso…</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>estrato</strong></td>
+<td align="left">estrato socioeconónico : 3,4,5,6</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>preciom</strong></td>
+<td align="left">precio de la vivienda en millones de pesos</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>areaconst</strong></td>
+<td align="left">área construida</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>parqueaderos</strong></td>
+<td align="left">número de parqueaderos</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>banios</strong></td>
+<td align="left">nḿero de baños</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>habitaciones</strong></td>
+<td align="left">número de habitaciones</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>tipo</strong></td>
+<td align="left">tipo de vivienda : Casa, Apartamento</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>barrio</strong></td>
+<td align="left">barrio de ubicación de la vivienda : 20 de Julio,
+alamos,..</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>longitud</strong></td>
+<td align="left">coordenada geográfica</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>latitud</strong></td>
+<td align="left">coordenada geográfica</td>
+</tr>
+</tbody>
+</table>
 </div>
+<p><br/><br/></p>
 <div id="pasos-requeridos-para-la-obtención-de-los-resultados"
 class="section level2">
 <h2><span style="color:#034a94"><strong>Pasos requeridos para la
 obtención de los resultados</strong></span></h2>
-<ol style="list-style-type: decimal">
-<li>Realice un filtro a la base de datos e incluya solo las ofertas de :
-<strong>base1</strong>: casas, de la zona norte de la ciudad</li>
-</ol>
 <p><br/></p>
-<p>Presente los primeros 3 registros de las bases y algunas tablas que
-comprueben la consulta. (Adicional un mapa con los puntos de las bases.
-Discutir si todos los puntos se ubican en la zona correspondiente o se
-presentan valores en otras zonas, por que?).</p>
+<p><strong>1.</strong> Realice un filtro a la base de datos e incluya
+solo las ofertas de : <strong>base1</strong>: casas, de la zona norte de
+la ciudad. Presente los primeros 3 registros de las bases y algunas
+tablas que comprueben la consulta. (Adicional un mapa con los puntos de
+las bases. Discutir si todos los puntos se ubican en la zona
+correspondiente o se presentan valores en otras zonas, por que?).</p>
 <p><br/></p>
-<ol start="2" style="list-style-type: decimal">
-<li>Realice un análisis exploratorio de datos enfocado en la correlación
-entre la variable respuesta (precio del apartamento) en función del área
-construida, estrato, numero de baños, numero de habitaciones y zona
-donde se ubica la vivienda. Use gráficos interactivos con el paquete
-<code>plotly</code> e interprete los resultados.</li>
-</ol>
+<p><strong>2.</strong> Realice un análisis exploratorio de datos
+enfocado en la correlación entre la variable respuesta (precio del
+apartamento) en función del área construida, estrato, numero de baños,
+numero de habitaciones y zona donde se ubica la vivienda. Use gráficos
+interactivos con el paquete <code>plotly</code> e interprete los
+resultados.</p>
 <p><br/></p>
-<ol start="3" style="list-style-type: decimal">
-<li>Estime un modelo de regresión lineal múltiple con las variables del
-punto anterior (precio = f(área construida, estrato, numero de cuartos,
-numero de parqueaderos, numero de baños ) ) e interprete los
-coeficientes si son estadísticamente significativos. Las
+<p><strong>3.</strong> Estime un modelo de regresión lineal múltiple con
+las variables del punto anterior (precio = f(área construida, estrato,
+numero de cuartos, numero de parqueaderos, numero de baños ) ) e
+interprete los coeficientes si son estadísticamente significativos. Las
 interpretaciones deber están contextualizadas y discutir si los
 resultados son lógicos. Adicionalmente interprete el coeficiente <span
 class="math inline">\(R^2\)</span> y discuta el ajuste del modelo e
-implicaciones (que podrían hacer para mejorarlo).</li>
-</ol>
+implicaciones (que podrían hacer para mejorarlo).</p>
 <p><br/></p>
-<ol start="4" style="list-style-type: decimal">
-<li>Realice la validación de supuestos del modelo e interprete los
-resultados (no es necesario corregir en caso de presentar problemas solo
-realizar sugerencias de que se podría hacer).</li>
-</ol>
+<p><strong>4.</strong> Realice la validación de supuestos del modelo e
+interprete los resultados (no es necesario corregir en caso de presentar
+problemas solo realizar sugerencias de que se podría hacer).</p>
 <p><br/></p>
-<ol start="5" style="list-style-type: decimal">
-<li>Con el modelo identificado debe predecir el precio de la vivienda
-con las características de la primera solicitud.</li>
-</ol>
+<p><strong>5.</strong> Con el modelo identificado debe predecir el
+precio de la vivienda con las características de la primera
+solicitud.</p>
 <p><br/></p>
-<ol start="6" style="list-style-type: decimal">
-<li>Con las predicciones del modelo sugiera potenciales ofertas que
-responda a la solicitud de la vivienda 1. Tenga encuentra que la empresa
-tiene crédito preaprobado de máximo 350 millones de pesos. Realice un
-análisis y presente en un mapa al menos 5 ofertas potenciales que debe
-discutir.</li>
-</ol>
+<p><strong>6.</strong> Con las predicciones del modelo sugiera
+potenciales ofertas que responda a la solicitud de la vivienda 1. Tenga
+encuentra que la empresa tiene crédito preaprobado de máximo 350
+millones de pesos. Realice un análisis y presente en un mapa al menos 5
+ofertas potenciales que debe discutir.</p>
 <p><br/></p>
-<ol start="7" style="list-style-type: decimal">
-<li>Realice los pasos del 1 - 6. Para la segunda solicitud se tiene un
-crédito preaprobado por valor de $850 millones.</li>
-</ol>
+<p><strong>7.</strong> Realice los pasos del <strong>1</strong> al
+<strong>6</strong>. Para la segunda solicitud se tiene un crédito
+preaprobado por valor de $850 millones.</p>
 <p><br/><br/></p>
 </div>
 <div id="entregable" class="section level2">
 <h2><span style="color:#034a94"><strong>Entregable</strong></span></h2>
+<p><br/></p>
 <p>Informe ejecutivo, máximo de dos hojas, con anexos soporte de las
 estimaciones en formato pdf</p>
-<!-- ### **Carga de datos** -->
-<!-- #### bajando los datos desde el paqueteMOD -->
-<!-- ```{r, eval=FALSE} -->
-<!-- library(remotes)  -->
-<!-- library(devtools)   -->
-<!-- install_github("dgonxalex80/paqueteDEG", force = TRUE) # bajar paquete -->
-<!-- library(paqueteDEG) -->
-<!-- data=paqueteDEG::casas -->
-<!-- ``` -->
-<!-- Adaptado de Weiers, Ronald M, Introducción a la estadística para Negocios., 2006. -->
+<p><br/><br/></p>
+<div id="carga-de-datos" class="section level3 content-box-yellow">
+<h3><span style="color:#FF7F00"><strong>Carga de datos</strong>
+</span></h3>
+<p><br/></p>
+<div id="bajando-los-datos-desde-el-paquetemod" class="section level4">
+<h4><strong>bajando los datos desde el paqueteMOD</strong></h4>
+<pre>
+install.packages("devtools") # solo la primera vez
+devtools::install_github("dgonxalex80/paqueteMOD", force =TRUE)
+library(paqueteMOD)
+data("vivienda")
+</pre>
+</div>
+</div>
+<p><br/><br/></p>
+<p><em>Adaptado de Weiers, Ronald M, Introducción a la estadística para
+Negocios., 2006.</em></p>
 </div>
 </div>
 
