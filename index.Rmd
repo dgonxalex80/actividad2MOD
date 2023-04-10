@@ -25,12 +25,15 @@ c4 ="#686868"  # gris - color texto
 
 <br/>
 
+<center>
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
 knitr::include_graphics("img/cali.png")
 ```
 
+<sub>
 Tomada de: [sitios-turisticos/cali](https://www.colombia.com/turismo/sitios-turisticos/cali/)
-
+</sub>
+</center>
 
 <br/>
 
@@ -67,8 +70,8 @@ Ayude a Maria  a responder la solicitud, mediante técnicas modelación que uste
 
 <br/><br/><br/>
 
-<div class="content-box-blue">
-## <span style="color:#034a94">**Datos**</span>
+<div class="content-box-gray">
+## <span style="color:#686868">**Datos**</span>
 
 Los datos de los tres últimos meses se adjuntan en la base que puede obtener con el siguiente código en R
 
@@ -134,24 +137,27 @@ Informe ejecutivo, máximo de dos hojas, con anexos soporte de las estimaciones 
 
 <br/><br/>
 
-<div class="content-box-yellow">
-### <span style="color:#FF7F00">**Carga de datos** </span>
+<div class="content-box-gray">
+### <span style="color:#686868">**Carga de datos** </span>
 
 <br/>
 
 #### **bajando los datos desde el paqueteMOD**
 
-<pre>
+```{r, eval=FALSE}
 install.packages("devtools") # solo la primera vez
 devtools::install_github("dgonxalex80/paqueteMOD", force =TRUE)
 library(paqueteMOD)
 data("vivienda")
-</pre>
+```
+
+
 
 </div>
 <br/><br/>
 
+<sub>
 *Adaptado de Weiers, Ronald M, Introducción a la estadística para Negocios., 2006.*
-
+</sub>
 
 

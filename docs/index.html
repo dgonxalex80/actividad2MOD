@@ -13,7 +13,7 @@
 
 <title> Actividad 2</title>
 
-<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -268,9 +268,12 @@ $(document).ready(function () {
 C&amp;A</strong></span></h1>
 <p><br/></p>
 <p><br/></p>
+<center>
 <p><img src="img/cali.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>Tomada de: <a
-href="https://www.colombia.com/turismo/sitios-turisticos/cali/">sitios-turisticos/cali</a></p>
+<sub> Tomada de: <a
+href="https://www.colombia.com/turismo/sitios-turisticos/cali/">sitios-turisticos/cali</a>
+</sub>
+</center>
 <p><br/></p>
 <div id="enunciado" class="section level2">
 <h2><span style="color:#034a94"><strong>Enunciado</strong></span></h2>
@@ -358,8 +361,8 @@ soporte del informe debe anexar las estimaciones, validaciones y
 comparación de modelos requeridos.</p>
 <p><br/><br/><br/></p>
 </div>
-<div id="datos" class="section level2 content-box-blue">
-<h2><span style="color:#034a94"><strong>Datos</strong></span></h2>
+<div id="datos" class="section level2 content-box-gray">
+<h2><span style="color:#686868"><strong>Datos</strong></span></h2>
 <p>Los datos de los tres últimos meses se adjuntan en la base que puede
 obtener con el siguiente código en R</p>
 <table>
@@ -482,23 +485,21 @@ preaprobado por valor de $850 millones.</p>
 <p>Informe ejecutivo, máximo de dos hojas, con anexos soporte de las
 estimaciones en formato pdf</p>
 <p><br/><br/></p>
-<div id="carga-de-datos" class="section level3 content-box-yellow">
-<h3><span style="color:#FF7F00"><strong>Carga de datos</strong>
+<div id="carga-de-datos" class="section level3 content-box-gray">
+<h3><span style="color:#686868"><strong>Carga de datos</strong>
 </span></h3>
 <p><br/></p>
 <div id="bajando-los-datos-desde-el-paquetemod" class="section level4">
 <h4><strong>bajando los datos desde el paqueteMOD</strong></h4>
-<pre>
-install.packages("devtools") # solo la primera vez
-devtools::install_github("dgonxalex80/paqueteMOD", force =TRUE)
+<pre class="r"><code>install.packages(&quot;devtools&quot;) # solo la primera vez
+devtools::install_github(&quot;dgonxalex80/paqueteMOD&quot;, force =TRUE)
 library(paqueteMOD)
-data("vivienda")
-</pre>
+data(&quot;vivienda&quot;)</code></pre>
 </div>
 </div>
 <p><br/><br/></p>
-<p><em>Adaptado de Weiers, Ronald M, Introducción a la estadística para
-Negocios., 2006.</em></p>
+<p><sub> <em>Adaptado de Weiers, Ronald M, Introducción a la estadística
+para Negocios., 2006.</em> </sub></p>
 </div>
 </div>
 
