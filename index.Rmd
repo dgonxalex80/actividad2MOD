@@ -49,11 +49,11 @@ Actualmente las ventas de bienes raíces en Cali se han visto disminuidas de man
 
 <br/>
 
-Hace dos días, Maria  recibió una carta solicitando asesoria para la compra de dos viviendas por parte de una compañía internacional que desea ubicar a dos de sus empleados con sus familias en la ciudad. Las solicitudes incluyen las siguientes condiciones: 
+Hace dos días, María  recibió una carta solicitando asesoría para la compra de dos viviendas por parte de una compañía internacional que desea ubicar a dos de sus empleados con sus familias en la ciudad. Las solicitudes incluyen las siguientes condiciones: 
 
 <br/><br/>
 
-| Caracteristicas |  Vivienda 1      | Vivienda 2  |
+| Características |  Vivienda 1      | Vivienda 2  |
 |:----------------|:----------------:|:-----------:|
 |Tipo             |    Casa          | Apartamento |
 |área construida  |     200          |      300    |
@@ -66,7 +66,7 @@ Hace dos días, Maria  recibió una carta solicitando asesoria para la compra de
 
 <br/>
 
-Ayude a Maria  a responder la solicitud, mediante técnicas modelación que usted conoce. Ella requiere le envíe un informe ejecutivo (no mas de dos paginas) donde analice los dos casos y sus recomendaciones. Como soporte del informe debe anexar las estimaciones, validaciones y comparación de modelos requeridos. 
+Ayude a María  a responder la solicitud, mediante técnicas modelación que usted conoce. Ella requiere le envíe un informe ejecutivo (no mas de dos paginas) donde analice los dos casos y sus recomendaciones. Como soporte del informe debe anexar las estimaciones, validaciones y comparación de modelos requeridos. 
 
 <br/><br/><br/>
 
@@ -79,11 +79,11 @@ Los datos de los tres últimos meses se adjuntan en la base que puede obtener co
 |:-------------------|:-----------------------------------------------------------|
 | **zona**           | ubicación de la vivienda    : Zona Centro, Zona Norte,...  |      
 | **piso**           | piso que ocupa la vivienda : primer piso, segundo piso...  |        
-| **estrato**        | estrato socioeconónico : 3,4,5,6                           |
+| **estrato**        | estrato socio-económico : 3,4,5,6                           |
 | **preciom**        | precio de la vivienda en millones de pesos                 |
 | **areaconst**      | área construida                                            |
 | **parqueaderos**   | número de parqueaderos                                     |
-| **banios**         | nḿero de baños                                             |
+| **banios**         | número de baños                                             |
 | **habitaciones**   | número de habitaciones                                     |
 | **tipo**           | tipo de vivienda : Casa, Apartamento                       |
 | **barrio**         | barrio de ubicación de la vivienda : 20 de Julio, alamos,..| 
@@ -120,11 +120,11 @@ Presente los primeros 3 registros de las bases y algunas tablas que comprueben l
 
 <br/>
 
-**6.** Con las predicciones del modelo sugiera potenciales ofertas que responda a la solicitud de la vivienda 1. Tenga encuentra que la empresa tiene crédito preaprobado de máximo 350 millones de pesos. Realice un análisis y presente en un mapa al menos 5 ofertas potenciales que debe discutir.
+**6.** Con las predicciones del modelo sugiera potenciales ofertas que responda a la solicitud de la vivienda 1. Tenga encuentra que la empresa tiene crédito pre-aprobado de máximo 350 millones de pesos. Realice un análisis y presente en un mapa al menos 5 ofertas potenciales que debe discutir.
 
 <br/>
 
-**7.** Realice los pasos del **1** al **6**. Para la segunda solicitud se tiene un crédito preaprobado por valor de $850 millones. 
+**7.** Realice los pasos del **1** al **6**. Para la segunda solicitud se tiene un crédito pre-aprobado por valor de $850 millones. 
 
 
 <br/><br/>
@@ -133,7 +133,7 @@ Presente los primeros 3 registros de las bases y algunas tablas que comprueben l
 
 <br/>
 
-Informe ejecutivo, máximo de dos hojas, con anexos soporte de las estimaciones en formato pdf
+Informe ejecutivo con anexos soporte de las estimaciones  publicado en **RPubs** - el enlace debe entregarse en la plataforma Bs 
 
 <br/><br/>
 
@@ -159,5 +159,4 @@ data("vivienda")
 <sub>
 *Adaptado de Weiers, Ronald M, Introducción a la estadística para Negocios., 2006.*
 </sub>
-
 
