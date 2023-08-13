@@ -146,8 +146,8 @@ Informe ejecutivo, máximo de dos hojas, con anexos soporte de las estimaciones 
 
 ```{r, eval=FALSE}
 install.packages("devtools") # solo la primera vez
-devtools::install_github("dgonxalex80/paqueteMOD", force =TRUE)
-library(paqueteMOD)
+devtools::install_github("dgonxalex80/paqueteMODELOS", force =TRUE)
+library(paqueteMODELOS)
 data("vivienda")
 ```
 
