@@ -66,7 +66,7 @@ Hace dos días, María  recibió una carta solicitando asesoría para la compra 
 
 <br/>
 
-Ayude a María  a responder la solicitud, mediante técnicas modelación que usted conoce. Ella requiere le envíe un informe ejecutivo (no mas de dos paginas) donde analice los dos casos y sus recomendaciones. Como soporte del informe debe anexar las estimaciones, validaciones y comparación de modelos requeridos. 
+Ayude a María  a responder la solicitud, mediante técnicas modelación que usted conoce. Ella requiere le envíe un informe ejecutivo  donde analice los dos casos y sus recomendaciones (Informe). Como soporte del informe debe anexar las estimaciones, validaciones y comparación de modelos requeridos (Anexos) . 
 
 <br/><br/><br/>
 
@@ -111,7 +111,7 @@ Presente los primeros 3 registros de las bases y algunas tablas que comprueben l
 
 <br/>
 
-**4.** Realice la validación de supuestos del modelo e interprete los resultados (no es necesario corregir en caso de presentar problemas solo realizar sugerencias de que se podría hacer).
+**4.** Realice la validación de supuestos del modelo e interprete los resultados (no es necesario corregir en caso de presentar problemas, solo realizar sugerencias de que se podría hacer).
 
 
 <br/>
@@ -151,10 +151,9 @@ library(paqueteMODELOS)
 data("vivienda")
 ```
 
-
-
 </div>
-<br/><br/>
+
+<br/>
 
 <sub>
 *Adaptado de Weiers, Ronald M, Introducción a la estadística para Negocios., 2006.*
