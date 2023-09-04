@@ -103,11 +103,11 @@ Presente los primeros 3 registros de las bases y algunas tablas que comprueben l
 
 <br/>
 
-**2.** Realice un análisis exploratorio de datos enfocado en la correlación entre la variable respuesta (precio del apartamento) en función del área construida, estrato, numero de baños, numero de habitaciones y zona donde se ubica la vivienda. Use gráficos interactivos con el paquete `plotly` e interprete los resultados.
+**2.** Realice un análisis exploratorio de datos enfocado en la correlación entre la variable respuesta (precio de la casa) en función del área construida, estrato, numero de baños, numero de habitaciones y zona donde se ubica la vivienda. Use gráficos interactivos con el paquete `plotly` e interprete los resultados.
 
 <br/>
 
-**3.** Estime un modelo de regresión lineal múltiple con las variables del punto anterior (precio = f(área construida, estrato, numero de cuartos, numero de parqueaderos, numero de baños ) )  e interprete los coeficientes si son estadísticamente significativos. Las interpretaciones deber están contextualizadas y discutir si los resultados son lógicos. Adicionalmente interprete el coeficiente $R^2$ y discuta el ajuste del modelo e implicaciones (que podrían hacer para mejorarlo).
+**3.** Estime un modelo de regresión lineal múltiple con las variables del punto anterior (precio = f(área construida, estrato, número de cuartos, número de parqueaderos, número de baños ) )  e interprete los coeficientes si son estadísticamente significativos. Las interpretaciones deber están contextualizadas y discutir si los resultados son lógicos. Adicionalmente interprete el coeficiente $R^2$ y discuta el ajuste del modelo e implicaciones (que podrían hacer para mejorarlo).
 
 <br/>
 
@@ -124,7 +124,7 @@ Presente los primeros 3 registros de las bases y algunas tablas que comprueben l
 
 <br/>
 
-**7.** Realice los pasos del **1** al **6**. Para la segunda solicitud se tiene un crédito pre-aprobado por valor de $850 millones. 
+**7.** Realice los pasos del **1** al **6**. Para la segunda solicitud que tiene un crédito pre-aprobado por valor de $850 millones. 
 
 
 <br/><br/>
