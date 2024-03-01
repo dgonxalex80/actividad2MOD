@@ -142,6 +142,12 @@ Informe ejecutivo con anexos soporte de las estimaciones  publicado en **RPubs**
 
 <br/>
 
+<!-- <pre> -->
+<!-- install.packages("devtools") # solo la primera vez -->
+<!-- devtools::install_github("dgonxalex80/paqueteMODELOS", force =TRUE) -->
+<!-- library(paqueteMODELOS) -->
+<!-- data("vivienda") -->
+<!-- </pre> -->
 #### **bajando los datos desde el paqueteMOD**
 
 ```{r, eval=FALSE}
